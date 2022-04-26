@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="listlist：列表。就是一种单纯的存储数据列的类型，只有值，没有键值对。 语法简单，用中括号括起来，如下存储学生姓名： 1classmates &#x3D; [&amp;#x27;Michael&amp;#x27;,&amp;#x27;Bob&amp;#x27;,&amp;#x27;Tracy&amp;#x27;]    tupletuple：元组。与list唯一不同的是初始化后就不可更改，当然也就不能用增加、删除的API。因为不可变，所以更安全，能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/04/26/%E5%9B%9B%E7%A7%8D%E6%95%B0%E6%8D%AE%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="listlist：列表。就是一种单纯的存储数据列的类型，只有值，没有键值对。 语法简单，用中括号括起来，如下存储学生姓名： 1classmates &#x3D; [&amp;#x27;Michael&amp;#x27;,&amp;#x27;Bob&amp;#x27;,&amp;#x27;Tracy&amp;#x27;]    tupletuple：元组。与list唯一不同的是初始化后就不可更改，当然也就不能用增加、删除的API。因为不可变，所以更安全，能">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-04-26T03:29:42.595Z">
+<meta property="article:modified_time" content="2022-04-25T15:15:33.071Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-四种数据集合类型" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/26/%E5%9B%9B%E7%A7%8D%E6%95%B0%E6%8D%AE%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B/" class="article-date">
+  <time class="dt-published" datetime="2022-04-26T03:29:42.595Z" itemprop="datePublished">2022-04-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><p>list：列表。就是一种单纯的存储数据列的类型，只有值，没有键值对。</p>
+<p>语法简单，用中括号括起来，如下存储学生姓名：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">classmates = [<span class="string">&#x27;Michael&#x27;</span>,<span class="string">&#x27;Bob&#x27;</span>,<span class="string">&#x27;Tracy&#x27;</span>]</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="tuple"><a href="#tuple" class="headerlink" title="tuple"></a>tuple</h2><p>tuple：元组。与list唯一不同的是初始化后就不可更改，当然也就不能用增加、删除的API。因为不可变，所以更安全，能用tuple代替list就尽量使用tuple。</p>
+<p>语法使用小括号，如下存储学生姓名：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">classmates = (<span class="string">&#x27;Michael&#x27;</span>,<span class="string">&#x27;Bob&#x27;</span>,<span class="string">&#x27;Tracy&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="dict"><a href="#dict" class="headerlink" title="dict"></a>dict</h2><p>dict：字典。类似其他语言中的map类型，存储键值对，因为存储方式做了优化，所以有极快的查找速度。dict的key必须是不可变的，同时python中的字符串、整数都是不可变的，而list是可变的，就不能作为key。</p>
+<p>语法使用大括号，如下存储学生分数信息的例子：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;<span class="string">&#x27;Michael&#x27;</span>:<span class="number">95</span>,<span class="string">&#x27;Bob&#x27;</span>:<span class="number">75</span>,<span class="string">&#x27;Tracy&#x27;</span>:<span class="number">85</span>&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="set"><a href="#set" class="headerlink" title="set"></a>set</h2><p>set是一组key的集合，没有value，且key不可重复。set内部也做了与dict相同的优化，所以同样不可放入可变对象。要创建一个set，需要提供一个list作为输入，也可以通过常见的方法增加删除元素。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s = set([1,2,3])</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/26/%E5%9B%9B%E7%A7%8D%E6%95%B0%E6%8D%AE%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B/" data-id="cl2fnxz2100016we286yjd37p" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/04/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/04/26/%E5%9B%9B%E7%A7%8D%E6%95%B0%E6%8D%AE%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/26/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
